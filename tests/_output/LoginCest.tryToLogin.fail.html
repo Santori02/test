@@ -1,0 +1,1681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+          content="content="cистема, предназначенная для обмена любыми документами в электронном виде юридически значимым способом между всеми юридическими и физическими лицами."">
+    <meta name="author" content="Documentolog">
+
+    <title>Самая легкая и доступная СЭД</title>
+    <link rel="icon" href="/site/images/favicon.png" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="/site/doculite/cssjs/bootstrap.min.css?v=3.1">
+    <link rel="stylesheet" type="text/css" href="/site/doculite/cssjs/animate.min.css?v=3.1">
+    <link rel="stylesheet" type="text/css" href="/site/doculite/cssjs/style.css?v=3.1">
+    <link rel="stylesheet" href="/site/css/font-awesome/css/font-awesome.min.css?v=3.1"
+          type="text/css"/>
+
+    <script type="text/javascript" src="/site/doculite/cssjs/wow.min.js?v=3.1"></script>
+
+    <script src="/site/jquery/jquery-2.2.4.min.js?v=3.1"></script>
+    <script src="/site/jquery/jquery.form.js?v=3.1"></script>
+    <script src="/site/jquery/jquery.maskedinput.min.js?v=3.1"></script>
+    <script src="/site/jquery/jquery.easing.min.js?v=3.1"></script>
+    <script src="/site/bootstrap/js/bootstrap.min.js?v=3.1"></script>
+
+    <meta property="og:title" content="Самая легкая и доступная СЭД"/>
+    <meta property="og:site_name" content="doculite.kz"/>
+    <meta property="og:description"
+          content="cистема, предназначенная для обмена любыми документами в электронном виде юридически значимым способом между всеми юридическими и физическими лицами."/>
+    <meta property="og:image" content="/site/images/doculite-ad.jpg"/>
+    <style>
+        .search_question{
+            display: flex;
+            flex-direction: row;
+            border: 1px solid rgba(0,0,0,0.4);
+            width: 70%;
+            padding:  0.5rem 1rem;
+            border-radius: 3px;
+            align-items: center;
+            margin-bottom: 1.5rem;
+
+        }
+
+        .search_question input{
+            border: none;
+            width: 100%;
+            height: 100%;
+            outline: none;
+        }
+        .search_question .iconsearch{
+            font-size: 15px;
+            color: rgba(0,0,0,0.7)
+        }
+    </style>
+
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-78889230-6"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+
+            gtag('js', new Date());
+
+            gtag('config', 'UA-78889230-6');
+        </script>
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript" >
+            (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+                m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+            ym(54268353, "init", {
+                clickmap: true,
+                trackLinks: true,
+                accurateTrackBounce: true,
+                webvisor: false
+            });
+        </script>
+        <noscript>
+            <div><img src="https://mc.yandex.ru/watch/54268353" style="position:absolute; left:-9999px;" alt=""/></div>
+        </noscript>
+        <!-- /Yandex.Metrika counter -->
+        <script>
+        new WOW().init();
+
+        var localeDict = JSON.parse('{\"currentUserPost \\u043a\\u043e\\u043c\\u043f\\u0430\\u043d\\u0438\\u0438 \\u00abcurrentCompanyName\\u00bb currentUserName \\u043f\\u0440\\u0438\\u0433\\u043b\\u0430\\u0448\\u0430\\u0435\\u0442 \\u0432\\u0430\\u0441 \\u043a \\u043e\\u0431\\u043c\\u0435\\u043d\\u0443 \\u0434\\u043e\\u043a\\u0443\\u043c\\u0435\\u043d\\u0442\\u0430\\u043c\\u0438 \\u0432 \\u0441\\u0438\\u0441\\u0442\\u0435\\u043c\\u0435 doculite.kz.\":\"{{currentUserPost}} \\u043a\\u043e\\u043c\\u043f\\u0430\\u043d\\u0438\\u0438 \\u00ab{{currentCompanyName}}\\u00bb {{currentUserName}} \\u043f\\u0440\\u0438\\u0433\\u043b\\u0430\\u0448\\u0430\\u0435\\u0442 \\u0432\\u0430\\u0441 \\u043a \\u043e\\u0431\\u043c\\u0435\\u043d\\u0443 \\u0434\\u043e\\u043a\\u0443\\u043c\\u0435\\u043d\\u0442\\u0430\\u043c\\u0438 \\u0432 \\u0441\\u0438\\u0441\\u0442\\u0435\\u043c\\u0435 doculite.kz.\",\"currentUserName \\u043f\\u0440\\u0438\\u0433\\u043b\\u0430\\u0448\\u0430\\u0435\\u0442 \\u0432\\u0430\\u0441 \\u043a \\u043e\\u0431\\u043c\\u0435\\u043d\\u0443 \\u0434\\u043e\\u043a\\u0443\\u043c\\u0435\\u043d\\u0442\\u0430\\u043c\\u0438 \\u0432 \\u0441\\u0438\\u0441\\u0442\\u0435\\u043c\\u0435 doculite.kz.\":\"{{currentUserName}} \\u043f\\u0440\\u0438\\u0433\\u043b\\u0430\\u0448\\u0430\\u0435\\u0442 \\u0432\\u0430\\u0441 \\u043a \\u043e\\u0431\\u043c\\u0435\\u043d\\u0443 \\u0434\\u043e\\u043a\\u0443\\u043c\\u0435\\u043d\\u0442\\u0430\\u043c\\u0438 \\u0432 \\u0441\\u0438\\u0441\\u0442\\u0435\\u043c\\u0435 doculite.kz.\",\"\\u0414\\u043b\\u044f \\u043f\\u043e\\u043b\\u0443\\u0447\\u0435\\u043d\\u0438\\u044f \\u0443\\u0432\\u0435\\u0434\\u043e\\u043c\\u043b\\u0435\\u043d\\u0438\\u0439 \\u043d\\u0430\\u043f\\u0438\\u0448\\u0438\\u0442\\u0435 \\u044d\\u0442\\u043e\\u0442 Telegram \\u0442\\u043e\\u043a\\u0435\\u043d {{employeeId}} -{{token}} \\u0431\\u043e\\u0442\\u0443 \\u0438\\u043b\\u0438 \\u043f\\u0440\\u043e\\u0439\\u0434\\u0438\\u0442\\u0435 \\u043f\\u043e \\u0441\\u0441\\u044b\\u043b\\u043a\\u0435 \\u0438 \\u043d\\u0430\\u0436\\u043c\\u0438\\u0442\\u0435 \\\"start\\\"\":\"\\u0414\\u043b\\u044f \\u043f\\u043e\\u043b\\u0443\\u0447\\u0435\\u043d\\u0438\\u044f \\u0443\\u0432\\u0435\\u0434\\u043e\\u043c\\u043b\\u0435\\u043d\\u0438\\u0439 \\u043d\\u0430\\u043f\\u0438\\u0448\\u0438\\u0442\\u0435 \\u044d\\u0442\\u043e\\u0442 Telegram \\u0442\\u043e\\u043a\\u0435\\u043d {{employeeId}} -{{token}} \\u0431\\u043e\\u0442\\u0443 \\u0438\\u043b\\u0438 \\u043f\\u0440\\u043e\\u0439\\u0434\\u0438\\u0442\\u0435 \\u043f\\u043e \\u0441\\u0441\\u044b\\u043b\\u043a\\u0435 \\u0438 \\u043d\\u0430\\u0436\\u043c\\u0438\\u0442\\u0435 \\\"start\\\"\",\"\\u0421\\u0442\\u043e\\u0438\\u043c\\u043e\\u0441\\u0442\\u044c {{pack.amount_with_nds | appNumber}} {{currency}} \\u0432 \\u043c\\u0435\\u0441\\u044f\\u0446\":\"\\u0421\\u0442\\u043e\\u0438\\u043c\\u043e\\u0441\\u0442\\u044c {{pack.amount_with_nds | appNumber}} {{currency}} \\u0432 \\u043c\\u0435\\u0441\\u044f\\u0446\",\"\\u041f\\u043e\\u0434\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u0438\\u0435 \\u043a \\u043f\\u0435\\u0440\\u0435\\u043f\\u0438\\u0441\\u043a\\u0435 \\u0441 \\u0413\\u041e \\u2013 50 000 {{currency}}\":\"\\u041f\\u043e\\u0434\\u043a\\u043b\\u044e\\u0447\\u0435\\u043d\\u0438\\u0435 \\u043a \\u043f\\u0435\\u0440\\u0435\\u043f\\u0438\\u0441\\u043a\\u0435 \\u0441 \\u0413\\u041e \\u2013 50 000 {{currency}}\",\"\\u041f\\u043e\\u043a\\u0430\\u0437\\u0430\\u043d\\u043e itemsOnPage \\u0438\\u0437 totalItems\":\"\\u041f\\u043e\\u043a\\u0430\\u0437\\u0430\\u043d\\u043e {{itemsOnPage}} \\u0438\\u0437 {{totalItems}}\",\"\\u041e\\u043f\\u0435\\u0440\\u0430\\u0442\\u043e\\u0440 \\u0443\\u0441\\u043b\\u0443\\u0433\\u0438: {{ service.provider }}\":\"\\u041e\\u043f\\u0435\\u0440\\u0430\\u0442\\u043e\\u0440 \\u0443\\u0441\\u043b\\u0443\\u0433\\u0438: {{ service.provider }}\",\"\\u0411\\u043b\\u0430\\u0433\\u043e\\u043d\\u0430\\u0434\\u0435\\u0436\\u043d\\u043e\\u0441\\u0442\\u044c \\u043a\\u043e\\u043d\\u0442\\u0440\\u0430\\u0433\\u0435\\u043d\\u0442\\u0430 title\":\"\\u0411\\u043b\\u0430\\u0433\\u043e\\u043d\\u0430\\u0434\\u0435\\u0436\\u043d\\u043e\\u0441\\u0442\\u044c \\u043a\\u043e\\u043d\\u0442\\u0440\\u0430\\u0433\\u0435\\u043d\\u0442\\u0430 {{title}}\",\"\\u0418\\u0441\\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u043d\\u043e {{usedMemory}} \\u041c\\u0431 ({{usedMemoryPercent}}%) \\u0438\\u0437 {{totalMemory}} \\u041c\\u0431\":\"\\u0418\\u0441\\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u043d\\u043e {{usedMemory}} \\u041c\\u0431 ({{usedMemoryPercent}}%) \\u0438\\u0437 {{totalMemory}} \\u041c\\u0431\",\"\\u0421\\u043f\\u0440\\u0430\\u0432\\u043e\\u0447\\u043d\\u0438\\u043a \\u00abtitle\\u00bb\":\"\\u0421\\u043f\\u0440\\u0430\\u0432\\u043e\\u0447\\u043d\\u0438\\u043a \\u00ab{{title}}\\u00bb\",\"\\u041a\\u043e\\u0440\\u0440\\u0435\\u0441\\u043f\\u043e\\u043d\\u0434\\u0435\\u043d\\u0442 \\u0441 \\u0442\\u0430\\u043a\\u0438\\u043c \\u043a\\u043e\\u0434\\u043e\\u043c \\u0443\\u0436\\u0435 \\u0441\\u0443\\u0449\\u0435\\u0441\\u0442\\u0432\\u0443\\u0435\\u0442, \\u0432\\u043e\\u0437\\u043c\\u043e\\u0436\\u043d\\u043e \\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u0435\\u043b\\u044c \\u0443\\u0436\\u0435 \\u0437\\u0430\\u0440\\u0435\\u0433\\u0438\\u0441\\u0442\\u0440\\u0438\\u0440\\u043e\\u0432\\u0430\\u043d\":\"\\u041a\\u043e\\u0440\\u0440\\u0435\\u0441\\u043f\\u043e\\u043d\\u0434\\u0435\\u043d\\u0442 \\u0441 \\u0442\\u0430\\u043a\\u0438\\u043c \\u043a\\u043e\\u0434\\u043e\\u043c \\u0443\\u0436\\u0435 \\u0441\\u0443\\u0449\\u0435\\u0441\\u0442\\u0432\\u0443\\u0435\\u0442, \\u0432\\u043e\\u0437\\u043c\\u043e\\u0436\\u043d\\u043e \\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u0435\\u043b\\u044c \\u0443\\u0436\\u0435 \\u0437\\u0430\\u0440\\u0435\\u0433\\u0438\\u0441\\u0442\\u0440\\u0438\\u0440\\u043e\\u0432\\u0430\\u043d\",\"\\u041a\\u043e\\u043d\\u0442\\u0440\\u0430\\u0433\\u0435\\u043d\\u0442 <b>docSendFullName<\\/b> \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u0438\\u043b \\u0412\\u0430\\u043c \\u0434\\u043e\\u043a\\u0443\\u043c\\u0435\\u043d\\u0442. \\u0414\\u0430\\u043d\\u043d\\u044b\\u0439 \\u0434\\u043e\\u043a\\u0443\\u043c\\u0435\\u043d\\u0442 \\u0431\\u044b\\u043b \\u043f\\u043e\\u0434\\u043f\\u0438\\u0441\\u0430\\u043d \\u042d\\u0426\\u041f \\u0438 \\u044f\\u0432\\u043b\\u044f\\u0435\\u0442\\u0441\\u044f \\u044e\\u0440\\u0438\\u0434\\u0438\\u0447\\u0435\\u0441\\u043a\\u0438-\\u0437\\u043d\\u0430\\u0447\\u0438\\u043c\\u044b\\u043c \\u044d\\u043b\\u0435\\u043a\\u0442\\u0440\\u043e\\u043d\\u043d\\u044b\\u043c \\u0434\\u043e\\u043a\\u0443\\u043c\\u0435\\u043d\\u0442\\u043e\\u043c.\":\"\\u041a\\u043e\\u043d\\u0442\\u0440\\u0430\\u0433\\u0435\\u043d\\u0442 <b>{{ docSendFullName }}<\\/b> \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u0438\\u043b \\u0412\\u0430\\u043c \\u0434\\u043e\\u043a\\u0443\\u043c\\u0435\\u043d\\u0442. \\u0414\\u0430\\u043d\\u043d\\u044b\\u0439 \\u0434\\u043e\\u043a\\u0443\\u043c\\u0435\\u043d\\u0442 \\u0431\\u044b\\u043b \\u043f\\u043e\\u0434\\u043f\\u0438\\u0441\\u0430\\u043d \\u042d\\u0426\\u041f \\u0438 \\u044f\\u0432\\u043b\\u044f\\u0435\\u0442\\u0441\\u044f \\u044e\\u0440\\u0438\\u0434\\u0438\\u0447\\u0435\\u0441\\u043a\\u0438-\\u0437\\u043d\\u0430\\u0447\\u0438\\u043c\\u044b\\u043c \\u044d\\u043b\\u0435\\u043a\\u0442\\u0440\\u043e\\u043d\\u043d\\u044b\\u043c \\u0434\\u043e\\u043a\\u0443\\u043c\\u0435\\u043d\\u0442\\u043e\\u043c.\",\"\\u0412\\u044b \\u0442\\u0430\\u043a\\u0436\\u0435 \\u043c\\u043e\\u0436\\u0435\\u0442\\u0435 \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043b\\u044f\\u0442\\u044c \\u044d\\u043b\\u0435\\u043a\\u0442\\u0440\\u043e\\u043d\\u043d\\u044b\\u0435 \\u0434\\u043e\\u043a\\u0443\\u043c\\u0435\\u043d\\u0442\\u044b \\u044e\\u0440\\u0438\\u0434\\u0438\\u0447\\u0435\\u0441\\u043a\\u0438\\u043c \\u0438 \\u0444\\u0438\\u0437\\u0438\\u0447\\u0435\\u0441\\u043a\\u0438\\u043c \\u043b\\u0438\\u0446\\u0430\\u043c, \\u0430 \\u0442\\u0430\\u043a\\u0436\\u0435 \\u0432 \\u0433\\u043e\\u0441\\u0443\\u0434\\u0430\\u0440\\u0441\\u0442\\u0432\\u0435\\u043d\\u043d\\u044b\\u0435 \\u043e\\u0440\\u0433\\u0430\\u043d\\u044b\\/\\u0443\\u0447\\u0440\\u0435\\u0436\\u0434\\u0435\\u043d\\u0438\\u044f, \\u043f\\u043e\\u0434\\u043f\\u0438\\u0441\\u044b\\u0432\\u0430\\u0442\\u044c \\u0434\\u0432\\u0443\\u0445\\u0441\\u0442\\u043e\\u0440\\u043e\\u043d\\u043d\\u0438\\u0435 \\u0438 \\u0442\\u0440\\u0435\\u0445\\u0441\\u0442\\u043e\\u0440\\u043e\\u043d\\u043d\\u0438\\u0435 \\u0434\\u043e\\u0433\\u043e\\u0432\\u043e\\u0440\\u0430, <u>\\u0437\\u0430\\u0440\\u0435\\u0433\\u0438\\u0441\\u0442\\u0440\\u0438\\u0440\\u043e\\u0432\\u0430\\u0432\\u0448\\u0438\\u0441\\u044c<\\/u> \\u043d\\u0430 \\u0441\\u0435\\u0440\\u0432\\u0438\\u0441\\u0435 Doculite.\":\"\\u0412\\u044b \\u0442\\u0430\\u043a\\u0436\\u0435 \\u043c\\u043e\\u0436\\u0435\\u0442\\u0435 \\u043e\\u0442\\u043f\\u0440\\u0430\\u0432\\u043b\\u044f\\u0442\\u044c \\u044d\\u043b\\u0435\\u043a\\u0442\\u0440\\u043e\\u043d\\u043d\\u044b\\u0435 \\u0434\\u043e\\u043a\\u0443\\u043c\\u0435\\u043d\\u0442\\u044b \\u044e\\u0440\\u0438\\u0434\\u0438\\u0447\\u0435\\u0441\\u043a\\u0438\\u043c \\u0438 \\u0444\\u0438\\u0437\\u0438\\u0447\\u0435\\u0441\\u043a\\u0438\\u043c \\u043b\\u0438\\u0446\\u0430\\u043c, \\u0430 \\u0442\\u0430\\u043a\\u0436\\u0435 \\u0432 \\u0433\\u043e\\u0441\\u0443\\u0434\\u0430\\u0440\\u0441\\u0442\\u0432\\u0435\\u043d\\u043d\\u044b\\u0435 \\u043e\\u0440\\u0433\\u0430\\u043d\\u044b\\/\\u0443\\u0447\\u0440\\u0435\\u0436\\u0434\\u0435\\u043d\\u0438\\u044f, \\u043f\\u043e\\u0434\\u043f\\u0438\\u0441\\u044b\\u0432\\u0430\\u0442\\u044c \\u0434\\u0432\\u0443\\u0445\\u0441\\u0442\\u043e\\u0440\\u043e\\u043d\\u043d\\u0438\\u0435 \\u0438 \\u0442\\u0440\\u0435\\u0445\\u0441\\u0442\\u043e\\u0440\\u043e\\u043d\\u043d\\u0438\\u0435 \\u0434\\u043e\\u0433\\u043e\\u0432\\u043e\\u0440\\u0430, <a href=\\\"https:\\/\\/doculite.kz\\/registration\\\" target=\\\"_blank\\\">\\u0437\\u0430\\u0440\\u0435\\u0433\\u0438\\u0441\\u0442\\u0440\\u0438\\u0440\\u043e\\u0432\\u0430\\u0432\\u0448\\u0438\\u0441\\u044c<\\/a> \\u043d\\u0430 \\u0441\\u0435\\u0440\\u0432\\u0438\\u0441\\u0435 Doculite.\",\"\\u0413\\u043e\\u043b\\u043e\\u0441\\u0443\\u044f, \\u0412\\u044b \\u0441\\u043e\\u0433\\u043b\\u0430\\u0448\\u0430\\u0435\\u0442\\u0435\\u0441\\u044c \\u0441 \\u0443\\u0441\\u043b\\u043e\\u0432\\u0438\\u044f\\u043c\\u0438 \\u043e\\u0444\\u0435\\u0440\\u0442\\u044b.\":\"\\u0413\\u043e\\u043b\\u043e\\u0441\\u0443\\u044f, \\u0412\\u044b \\u0441\\u043e\\u0433\\u043b\\u0430\\u0448\\u0430\\u0435\\u0442\\u0435\\u0441\\u044c \\u0441 \\u0443\\u0441\\u043b\\u043e\\u0432\\u0438\\u044f\\u043c\\u0438 <a href=\\\"https:\\/\\/doculite.kz\\/offer\\\" target=\\\"_blank\\\">\\u043e\\u0444\\u0435\\u0440\\u0442\\u044b<\\/a>.\",\"Document not found\":\"\\u0414\\u043e\\u043a\\u0443\\u043c\\u0435\\u043d\\u0442 \\u043d\\u0430 \\u043d\\u0430\\u0439\\u0434\\u0435\\u043d\",\"\\u0422\\u043e\\u043b\\u044c\\u043a\\u043e \\u043f\\u0440\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\":\"\\u0422\\u043e\\u043b\\u044c\\u043a\\u043e \\u043f\\u0440\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\"}');
+
+        function translate(s, params) {
+            if (localeDict[s]) {
+                var res = localeDict[s];
+                for (var k in params) {
+                    res = res.replace(new RegExp(k, 'g'), params[k]);
+                }
+                return res;
+            }
+            return s;
+        }
+    </script>
+    <style>
+        .list_item-white-important {
+            color: white !important;
+        }
+    </style>
+</head>
+<body>
+
+<div class="MiniMobileAppOffer">
+    <div class="MiniMobileAppOffer-Icon">
+        <img src="/site/images/mobile-app/app-icon.png" alt="">
+    </div>
+    <div class="MiniMobileAppOffer-Close"></div>
+    <div class="MiniMobileAppOffer-Desc">
+        Работайте в системе Doculite с мобильного приложения.        Удобнее. Быстрее. Легче.        <br>
+        <a href="#" class="MiniMobileAppOffer_Download MobileAppLink">Установить</a>
+    </div>
+</div>
+
+<nav class="Header ">
+    <div class="Header-Top">
+        <div class="container">
+            <ul class="Top-Menu">
+                <li class="logged-item">
+                    <a href="#" onclick="toSite();return false;" class="sing-in-btn with-dropdown">
+                        <i class="fa fa-user"></i>
+                        <span id="displayName"></span>
+                    </a>
+                    <div class="user-menu">
+                        <button id="user-menu-dropdown-button">
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </button>
+                        <ul id="user-menu-dropdown-menu" data-state="close">
+                            <li>
+                                <a href="#" onclick="logout();return false;">
+                                    <i class="fa fa-sign-out" aria-hidden="true"
+                                       style="margin-right: 5px;"></i>Выход                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="not-logged-item" style="display: none;">
+                    <a href="/login" class="sing-in-btn">Войти</a>
+                </li>
+                <li class="not-logged-item green-divider" style="display: none;">
+                    <a href="/registration" class="sing-in-btn">Регистрация</a>
+                </li>
+                                    <li>
+                        <div class="Lang">
+                            <div class="Lang-Selected">
+                                <span class="Lang-Item ">RU <img
+                                            src="/site/images/russia-flag-xs.png" alt=""></span>
+                                <span class="Lang-Item hidden">KZ <img
+                                            src="/site/images/kazakhstan-flag-xs.png" alt=""></span>
+                            </div>
+                            <div class="LangDropdown">
+                                <ul class="LangsList">
+                                    <li>
+                                        <button onclick="changeLang('ru')"
+                                                disabled >
+                                            <span class="Lang-Item">RU <img src="/site/images/russia-flag-xs.png"
+                                                                            alt=""></span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button onclick="changeLang('kz')"
+                                                 >
+                                            <span class="Lang-Item">KZ <img src="/site/images/kazakhstan-flag-xs.png"
+                                                                            alt=""></span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+    <div class="container Header-Main">
+        <a class="Header-Logo" href="/"><img src="/site/doculite/imgs/header_logo.png" alt="Doculite"/></a>
+        <button type="button" class="navbar-toggle" onclick="toggleMenu()">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <ul class="Header-Menu">
+                            <li>
+                    <a href="/tariffs" class="list_item-white-important">Цены</a>
+                </li>
+                <li>
+                    <a href="/clients" class="list_item-white-important">Контрагенты</a>
+                </li>
+                <li>
+                    <a href="/certification-instruction">Услуги НПП</a>
+                </li>
+                                    <li>
+                        <a href="/useful" class="list_item-white-important">Полезные материалы</a>
+                    </li>
+                                <!--                <li>-->
+                <!--                    <a href="https://partner.doculite.kz"-->
+                <!--                       target="_blank">--><!--</a>-->
+                <!--                </li>-->
+                <li>
+                    <a href="/tracking" class="list_item-white-important">Проверка документа</a>
+                </li>
+                <li>
+                    <a href="/contacts" class="list_item-white-important">Контакты</a>
+                </li>
+                    </ul>
+    </div>
+</nav>
+<script type="text/javascript">
+    // if ($(location).attr('pathname') === '/landing') {
+    //     $('.select-lang').parent().attr('style', 'margin-left: 30px');
+    // }
+
+    function getCookie(name) {
+        let matches = document.cookie.match(new RegExp(
+            "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+        ));
+        return matches ? decodeURIComponent(matches[1]) : undefined;
+    }
+
+    $(() => {
+        const cookieName = '_lang';
+
+        if (getCookie(cookieName)) {
+            $('.select-lang').val(getCookie(cookieName));
+        } else {
+            document.cookie = "_lang=ru";
+        }
+    });
+
+    function changeLang(lang) {
+        document.cookie = "_lang=" + lang;
+        document.location.reload(true);
+    }
+
+    $('.select-lang').change(function () {
+        changeLang(this.value)
+    });
+
+    $('#user-menu-dropdown-button').on('click', function () {
+        if ($('#user-menu-dropdown-menu').data('state') === 'open') {
+            $('#user-menu-dropdown-menu').data('state', 'close');
+            $('#user-menu-dropdown-menu').hide();
+        } else {
+            $('#user-menu-dropdown-menu').data('state', 'open');
+            $('#user-menu-dropdown-menu').show();
+        }
+    });
+    $('#user-menu-dropdown-button').on('blur', function () {
+        setTimeout(function () {
+            $('#user-menu-dropdown-menu').data('state', 'close');
+            $('#user-menu-dropdown-menu').hide();
+        }, 200);
+    });
+
+    function toggleMenu() {
+        $('.Header-Menu').stop().slideToggle();
+    }
+
+    $(window).resize(function () {
+        var mobileBreakpoint = 992;
+
+        if ($(this).outerWidth() > mobileBreakpoint) {
+            $('.Header-Menu').removeAttr('style');
+        }
+    })
+
+    function logout() {
+        localStorage.removeItem('accessKey');
+        localStorage.removeItem('displayName');
+        window.location.href = 'https://doculite.kz/login';
+    }
+</script>
+
+<link rel="stylesheet" type="text/css" href="/site/doculite/cssjs/reg_log_styles.css?v=3.1">
+<!--<link rel="stylesheet" type="text/css" href="/site/doculite/cssjs/ncalayer.css">-->
+
+<style>
+    .error_modal {
+        display: flex;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: 16px;
+        z-index: 1000;
+        width: 400px;
+        background: white;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid black;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .eds_placeholder {
+        width: 100%;
+        height: 34px;
+        color: black;
+        border: none;
+        border-radius: 0;
+        font-size: 15px;
+        padding: 6px 12px;
+        background: white;
+    }
+
+</style>
+
+<section class="header-slider"
+         style="/*background-image: url(/site/doculite/imgs/sign_in_bg.jpg);*/background-color: #f5f5f5;">
+    <div class="registration-block" style="background-color: transparent;">
+        <div class="container">
+            <div class="new-reg-block new-reg-block_reverse" id="loginToSystem">
+                <div class="new-reg-block_sidebar">
+                    <div class="new-reg-block_sidebar_sign-up" style="left: 0">
+                        <div class="new-reg-block_sidebar_title">Авторизация</div>
+                        <div class="new-reg-block_sidebar_subtitle">
+                                                            Для работы в системе Doculite необходимо авторизоваться.
+                                                    </div>
+                    </div>
+                </div>
+                <div class="new-reg-block_content">
+                    <div class="new-reg-block_content_sign-in">
+                        <div class="js-sign-in-block sign-in-block step-1 registration-right">
+                            <ul class="regTypeTitles">
+                                <li class="regTypeTitles-Item active"
+                                    data-reg-type="eds">Войти по ЭЦП</li>
+                                                                    <li class="regTypeTitles-Item"
+                                        data-reg-type="email">Войти по E-mail</li>
+                                                            </ul>
+                            <div id="by-eds-container">
+                                <form id="login-by-eds-form" method="POST"
+                                      action="https://apiv1.doc24.kz/json/user/login"
+                                      autocomplete="off">
+                                    <div class="edsPasswordBlock">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <label>Тип хранилища ключей ЭЦП</label>
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <select class="form-control" id="sign-in-eds-type">
+                                                    <option value="AKEToken72KStore">eToken</option>
+                                                    <option value="AKKaztokenStore">KazToken</option>
+                                                    <option value="PKCS12" selected="selected">Файл</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div id="sign-in-login-by-file-container">
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <label>Файл ЭЦП</label>
+                                                </div>
+                                                <div class="col-sm-8" style="margin-bottom: 20px">
+                                                    <div class="input-group upload_file">
+                                                        <input class="form-control" type="text" readonly
+                                                               id="sign-in-fileName">
+                                                        <div class="input-group-btn">
+                                                            <label type="button" class="btn btn-md btn-primary">
+                                                                <input type="file"
+                                                                       onchange="oLogin.handleFileChoose(this)"/>
+                                                                Выбрать ЭЦП                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <label>Пароль к хранилищу ключей ЭЦП</label>
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <input class="form-control" id="sign-in-file-eds-password"
+                                                           type="password" placeholder="Пароль"
+                                                           autocomplete="off">
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                </div>
+                                                <div class="col-sm-8" style="text-align: left">
+                                                                                                        <input id="login-sign-file-input" type="hidden" name="sSign"/>
+                                                    <input id="login-sign-string-id" type="hidden" name="sSignStringId"/>
+                                                    <button id="sign-in-jssLogin" class="btn btn-primary"
+                                                            onclick="oLogin.jssLoginAction(); return false;">Войти по ЭЦП</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="sign-in-login-by-usb-container">
+                                            <div class="row" style="display: none;">
+                                                <div class="col-sm-4">
+                                                    <label>Выберите ключ</label>
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <select id="sign-in-key-select" class="form-control">
+                                                    </select>
+                                                    <br>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <label>Пароль к хранилищу ключей ЭЦП</label>
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <input class="form-control" id="sign-in-eds-password"
+                                                           type="password" placeholder="Пароль"
+                                                           autocomplete="off">
+                                                    <div style="margin: 15px 0;">
+                                                        <i>При выборе сертификата необходимо указывать сертификат                                                            :</i><br>
+                                                        <i>• для Юридических лиц - GOST</i><br>
+                                                        <i>• для Физических лиц и Индивидуальных предпринимателей - RSA                                                            .</i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <input id="login-sign-input" type="hidden" name="sSign" disabled/>
+                                                    <button id="submit-sign-login"
+                                                            style="display: none; margin-left: 15px;"
+                                                            class="login-button btn btn-primary pull-right"
+                                                            onclick="oLogin.loginAction(); return false;">Войти по ЭЦП</button>
+                                                    <button id="sign-in-choose-cert" class="btn btn-primary pull-right"
+                                                            onclick="oLogin.browseKeyStore(); return false;">Выбрать ЭЦП</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sign-in-block doc24notRun" style="text-align: left; display: none">
+                                            <h3>Возможно DOC24 Агент не запущен или не обновлён до последней версии</h3>
+                                            <ol class="instruction_list" style="font-size: 18px;">
+                                                <li>
+                                                    <a class="download_link" onclick="downloadAgent(); return false;">
+                                                        <b>Скачайте программу DOC24 Агент</b>
+                                                    </a>
+                                                    и установите её                                                </li>
+                                                <li>Запустите DOC24 Агент, обновите страницу и введите пароль от Вашего сертификата в поле "Пароль"</li>
+                                                <li>Нажмите кнопку "Выберите ЭЦП" и выберите сертификат GOST/RSA в открывшемся окне</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div id="by-pass-container">
+                                <form id="login-by-pass-form" method="POST"
+                                      action="https://apiv1.doc24.kz/json/user/login-by-pass?lang=ru"
+                                      autocomplete="off">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <label>Е-mail</label>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <input class="form-control" type="text" name="sEmail" placeholder="E-mail"
+                                                   value="">
+                                            <br>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <label>Пароль</label>
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <input class="form-control" type="password" name="sPassword"
+                                                   autocomplete="off" placeholder="Пароль"
+                                                   onkeyup="function(event) {if(event.keyCode == 13){oLogin.sendFormLogin('login-by-pass-form');}}"/>
+                                            <br>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-4"><span class="forgot-password" style="margin: 0 auto;"><a
+                                                        href="/forgot-password">Забыли пароль?</a></span>
+                                        </div>
+                                        <div class="col-sm-12" style="text-align: center">
+                                            <button id="login-button" class="login-button btn btn-primary"
+                                                    onclick="oLogin.sendFormLogin('login-by-pass-form'); return false;">Войти</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div id="by-ncalayer-container" style="display: none;">
+                                <input type="hidden" id="storagePath" value=""/>
+                                <input type="hidden" id="storageAlias" value=""/>
+                                <input type="hidden" id="keyAlias" value=""/>
+                                <input type="hidden" id="password" value=""/>
+                                <input type="hidden" id="keyType" value="AUTH"/>
+                                <div class="NCALayerErrorBackDrop"
+                                     style="display: none; position: fixed;inset: 0; background-color: rgba(0,0,0,0.4); z-index: 999"></div>
+                                <div id="NCALayerError" class="modal error_modal" style="display: none">
+                                    <h4 class="modal-title" style="color: black !important">Ошибка</h4>
+                                    <div class="modal-actions"
+                                         style="color: black !important">
+                                        Произошла ошибка. Повторите заново.
+                                    </div>
+                                    <div class="modal-actions">
+                                        <input class="modal-btn"
+                                               style="display: block!important " type="button"
+                                               onclick="hideErrorModal('NCALayerError')"
+                                               value="OK">
+                                    </div>
+                                </div>
+
+
+                                <!--                                HERE  -->
+                                <div id="NCALayerNotConnected" class="modal error_modal" style="display: none;">
+                                    <h4 class="modal-title" style="color: black !important">Ошибка при подключений к
+                                        прослойке</h4>
+
+                                    <div class="modal-actions">
+                                        <h3 style="color: black !important">Убедитесь что программа запущена и повторите
+                                            попытку.<br/><a
+                                                    href="http://pki.gov.kz/index.php/ru/ncalayer" target="_blank">Инструкция
+                                                по запуску программы</a></h3>
+                                    </div>
+                                    <div class="modal-actions">
+                                        <input class="modal-btn" type="button"
+                                               style="display: block !important;"
+                                               onclick="hideErrorModal('NCALayerNotConnected')"
+                                               value="OK">
+                                    </div>
+                                </div>
+
+
+                                <!--                                END-->
+
+
+                                <div id="chooseKeyModal" class="modal error_modal" style="display: none;">
+                                    <h4 class="modal-title" style="color: black !important">Выберите ключ</h4>
+                                    <div id="selectKey" class="modal-actions" style="margin: 5px 0;width: 100%">
+                                        <select style="width: 100%; border: 1px solid black;" onchange="keysOptionChanged();" id="keys"></select>
+                                    </div>
+                                    <div class="modal-actions"
+                                         style="display: flex; justify-content: center;">
+                                        <input class="modal-btn" type="button"
+                                               style="display: block !important;margin-right: 30px;"
+                                               onclick="fillData(); hideChooseKeyModal();" value="Выбрать">
+                                        <input class="modal-btn" type="button"
+                                               style="display: block !important;background: darkred;"
+                                               onclick="hideErrorModal('chooseKeyModal')"
+                                               value="Отмена">
+                                    </div>
+                                </div>
+
+                                <div id="chooseNCLayerModal" class="modal error_modal" style="display: none;">
+                                    <h4 class="modal-title" style="color: black !important">Выберите тип документа</h4>
+
+                                    <div id="selectCertNCLayerStore" class="modal-actions">
+                                    </div>
+                                    <div class="modal-actions" style="display:flex; justify-content: center">
+                                        <input class="modal-btn" style="display: block !important;background: darkred;" type="button"
+                                               onclick="hideErrorModal('chooseNCLayerModal')"
+                                               value="Отмена">
+                                    </div>
+                                </div>
+                                <div id="NCApassModal" class="modal modal--password error_modal"
+                                     style=" display: none; align-items: normal !important; color: black !important;">
+                                    <h4 class="modal-title" style="color: black !important;">Введите пароль</h4>
+                                    <form class="modal-form" style="margin: 5px 0; color: black !important;">
+                                        <input id="signNCAPassword" style="width: 100%" type="password"
+                                               class="modal-form-input">
+                                    </form>
+                                    <div id="modalNCAInfo" class="modal-info" style="">
+                                        <div id="signNCAWrongPassword" class="modal-info-state"
+                                             style="display: none; color: black !important;">
+                                            Пароль неверен.
+                                        </div>
+                                        <div id="signNCAEmptyPassword" class="modal-info-state"
+                                             style="display: none; color: black !important;">
+                                            Введите пароль
+                                        </div>
+                                        <div id="signNCATryPanel" class="modal-info-state"
+                                             style="display: none;">
+                                            Осталось попыток <span
+                                                    id="signNCATries"></span></div>
+                                        <div id="signNCAUnknownErrorPanel" class="modal-info-state"
+                                             style="display: none; color: black !important;">Код ошибки <span
+                                                    id="signNCAErrorCode"></span></div>
+                                        <div id="signNCABlock" class="modal-info-state"
+                                             style="display: none; color: black !important;">ЭЦП на
+                                            удостоверение личности заблокировано. Обратитесь в НАО ГК "Правительство для
+                                            граждан".
+                                        </div>
+                                        <div id="signNCANoCertsInStoreAuth" class="modal-info-state"
+                                             style="display: none; color: black !important;">Выберите сертификат для
+                                            авторизации (с префиксом
+                                            AUTH) и повторно введите пароль
+                                        </div>
+                                        <div id="signNCANoCertsInStoreSign" class="modal-info-state"
+                                             style="display: none; color: black !important;">Выберите сертификат для
+                                            подписания заявки и повторно
+                                            введите пароль
+                                        </div>
+                                        <div id="techErrorNCA" class="modal-info-state"
+                                             style="display: none; color: black !important;">Произошла
+                                            техническая ошибка. Повторите запрос позже.
+                                        </div>
+                                    </div>
+                                    <div class="modal-actions"
+                                         style="display: flex; justify-content: center; align-items: center">
+                                        <input class="modal-btn" style="margin-right: 20px; color: black !important;"
+                                               type="submit" onclick="setNCAPassword();"
+                                               value="Войти">
+                                        <input class="modal-btn"
+                                               style=" display: block !important;background: darkred;" type="button"
+                                               onclick="hideErrorModal('NCApassModal');"
+                                               value="Отмена">
+                                    </div>
+                                </div>
+                                <input type="hidden" id="xmlToSign"
+                                       value='<?xml version="1.0" encoding="UTF-8"?><login><timeTicket>1526993137362</timeTicket>
+                                                   <sessionid>U-nizWwja9c+aJxG708Phb+R</sessionid></login>'>
+                                <form id="login-by-eds_ncalayer_form" method="POST"
+                                      action="https://apiv1.doc24.kz/json/user/login"
+                                      autocomplete="off">
+                                    <div id="signPnlSignedXMLS" style="visibility: hidden;">
+                                        <input type="hidden" id="certificate" name="certificate">
+                                    </div>
+                                    <div class="edsPasswordBlock">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <label>Тип хранилища ключей ЭЦП</label>
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <select class="form-control" id="sign-in-eds-type-ncalayer">
+                                                    <option value="AKEToken72KStore">eToken</option>
+                                                    <option value="AKKaztokenStore">KazToken</option>
+                                                    <option value="PKCS12" selected="selected">Файл</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="display: none;">
+                                            <div class="col-sm-4">
+                                                <label>Выберите ключ</label>
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <select id="sign-in-key-ncalayer-select" class="form-control">
+                                                </select>
+                                                <br>
+                                            </div>
+                                        </div>
+                                        <form style="display: flex; flex-direction: column">
+                                            <div style="display: flex; justify-content: space-between; margin-bottom: 15px">
+                                        <span style="width: 230px; font-weight: 500; font-size: 18px;"> IIN
+                                                </span>
+                                                <span id="signIIN" style="color: black !important" class="eds_placeholder">
+                                            </div>
+                                            <div style="display: flex; justify-content: space-between; margin-bottom: 15px">
+                                                <span style="width: 230px; font-weight: 500; font-size: 18px;">
+                                                    E-mail:                                                </span>
+                                                <span id="signEmail" style="color: black !important"
+                                                      class="eds_placeholder">
+                                            </div>
+
+                                            <div style="display: flex; justify-content: space-between; margin-bottom: 15px">
+                                                <span style="width: 230px; font-weight: 500; font-size: 18px;">
+                                                    ФИО
+                                                </span>
+                                                <span id="signFullName" style="color: black !important"
+                                                      class="eds_placeholder">
+                                            </div>
+
+                                            <div id="signBINRow" style="display: flex; justify-content: space-between; margin-bottom: 15px">
+                                                <span style="width: 230px; font-weight: 500; font-size: 18px;">
+                                                    БИН::
+                                                </span>
+                                                <span id="signBIN" style="color: black !important"
+                                                      class="eds_placeholder">
+                                            </div>
+                                            <div id="signOrgNameRow" style="display: flex; justify-content: space-between; margin-bottom: 15px">
+                                                <span style="width: 230px; font-weight: 500; font-size: 18px;">
+                                                    Наименование организации:
+                                                </span>
+                                                <span id="signOrgName" style="color: black !important"
+                                                      class="eds_placeholder">
+                                            </div>
+
+                                            <div style="display: flex; margin-bottom: 15px">
+                                                <span style="width: 170px; font-weight: 500; font-size: 18px;">
+                                                    Срок действия
+                                                </span>
+                                                <span class="signEDSAttr" style="width: auto" id="beginDate">_________</span> - <span class="signEDSAttr" id="endDate">__________</span>
+                                            </div>
+                                        </form/>
+
+                                    </div>
+                                    <div id="signBtnsPnl" style="display: none">
+                                        <input id="loginButton" onclick="return doSignXML();" value="Войти в систему" class="buttonGreen bigGreenButton" >
+
+                                    </div>
+                                </form>
+
+
+                                <div id='signSelCertBtnsPnl' style="display: block;">
+                                    <input type="button" class="login-button btn btn-primary" id="buttonSelectCert"
+                                           value="Выбрать сертификат"
+                                           onclick="selectSignType()" style="display:block;">
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: 35px; margin-bottom: 20px;">
+                                <div class="col-xs-5" style="border-top: 1px solid #ccc;"></div>
+                                <div class="col-xs-2"
+                                     style="margin-top: -15px;text-align: center;font-size: 18px;">или</div>
+                                <div class="col-xs-5" style="border-top: 1px solid #ccc;"></div>
+                            </div>
+                            <ul class="regTypes">
+                                <li class="regTypes-Item active" data-reg-type="google">
+                                    <a href="https://accounts.google.com/o/oauth2/v2/auth?scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&redirect_uri=https%3A%2F%2Fdoculite.kz%2Flogin-by-google&response_type=code&client_id=187169965443-na8737h3dc9d8si4o52v9titjj8vsmf0.apps.googleusercontent.com&access_type=online" style="text-decoration:none !important;">
+                                        <span class="SignInButton SignInButton_Google">
+                                            <img src="/site/images/reg/google-icon.svg" class="SignInButton-Icon"
+                                                 alt="">
+                                            Войти через Google                                        </span>
+                                    </a>
+                                </li>
+                                <li class="regTypes-Item"
+                                    data-reg-type="eds">Войти по ЭЦП</li>
+                                <li class="regTypes-Item active"
+                                    data-reg-type="email">Войти по E-mail</li>
+                                <li class="regTypes-Item active" data-reg-type="facebook"
+                                    style="text-decoration:none !important;">
+                                    <a href="https://www.facebook.com/v2.10/dialog/oauth?client_id=816782068789165&state=f0e900b717245c68497568b8df4cedaf&response_type=code&sdk=php-sdk-5.7.0&redirect_uri=https%3A%2F%2Fdoculite.kz%2Flogin-by-facebook&scope=email">
+                                        <span class="SignInButton SignInButton_Facebook">
+                                            <i class="fa fa-facebook SignInButton-Icon"></i>
+                                            Войти через Facebook                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sign-in-block choose-company-form-block registration-right">
+                            <div class="new-reg-block_sidebar_title">Авторизация</div>
+                            <form>
+                                <p>
+                                    Вы зарегистрированы как физическое лицо и как индивидуальный предприниматель                                    .
+                                    <br>
+                                    Пожалуйста, выберите аккаунт для входа в личный кабинет:
+                                </p>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div id="login-company-select"></div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <button type="button" id="choose-button" class="login-button btn btn-primary"
+                                                onclick="oLogin.chooseCompany(); return false;">Войти</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="sign-in-block secret-code-form-block registration-right">
+                            <form>
+                                <label id="secret-code-label"></label>
+                                <br>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <input type="password" class="form-control" id="login-secret-code"/>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <button type="button" id="secret-code-button"
+                                                class="login-button btn btn-primary pull-right"
+                                                onclick="oLogin.sendSecretCode(); return false;">Войти</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <p style="margin-top: 25px; cursor: pointer" class="resend-message-again-button">
+                                <span id="timer">Отправить письмо повторно.</span>
+                            </p>
+                            <div>
+                                <a style="cursor: pointer" class="no-received">Не пришло письмо подтверждения?</a style>
+                                <div class="no-received-info" style="display: none;margin-top: 10px;padding: 15px 20px; border-radius: 5px; background-color: rgba(14, 14, 14, 0.49);">
+                                    <ul style="margin: 0; padding-left: 20px;">
+                                        <li>
+                                            Возможно письмо попало в папку "спам". Рекомендуем отметить письмо, как "не спам"                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="assets/pdfjs/pdf.js"></script>
+            <script src="/site/js/jss.min.js"></script>
+        </div>
+    </div>
+</section>
+
+<script>
+    var date = new Date(0);
+    document.cookie = "accessKey=;expires=" + date.toUTCString();
+</script>
+
+<!-- Custom JavaScript -->
+<script src="/site/js/web-scokets/doclog_ws.js?v=3.1"></script>
+<script src="/site/js/web-scokets/login-sign.js?v=3.1"></script>
+<script src="/site/js/web-scokets/ncalayer-login.js"></script>
+
+<script src="/site/js/resend-message.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        var lastKeySaveTime = +localStorage.getItem('lastKeyTime');
+        var now = new Date().getTime();
+        if (!isNaN(lastKeySaveTime) && lastKeySaveTime > 0 && now - lastKeySaveTime > 604800000) {
+            localStorage.removeItem('lastKey');
+            localStorage.removeItem('lastKeyName');
+            localStorage.removeItem('lastKeyPassword');
+            localStorage.removeItem('lastKeyTime');
+        }
+
+        if (localStorage.getItem('lastKeyName') != null && localStorage.getItem('lastKey') != null) {
+            $("#sign-in-fileName").val(localStorage.getItem('lastKeyName'));
+            regPage.key = localStorage.getItem('lastKey');
+            oLogin.key = localStorage.getItem('lastKey');
+        }
+
+        if (localStorage.getItem('loginBy') !== null) {
+            if (localStorage.getItem('loginBy') === 'eds') {
+                selectEdsEnter();
+            } else {
+                selectPassEnter();
+            }
+        }
+    });
+    var sApiSiteUrl = "https://apiv1.doc24.kz";
+    oLogin = regPage;
+    oNcaLayer = regNcaLayerPage;
+    oLogin.resendMessageTimer = resendMessageTimer;
+    $('#sign-in-eds-type').on('change', function () {
+        if ($(this).val() == 'PKCS12') {
+            $('#sign-in-login-by-file-container').show();
+            $('#sign-in-login-by-usb-container').hide();
+            $('#login-sign-file-input').prop('disabled', false);
+            $('#login-sign-usb-input').prop('disabled', true);
+
+            $('.sign-in-block.doc24notRun').hide();
+        } else {
+            $('#sign-in-login-by-file-container').hide();
+            $('#login-sign-file-input').prop('disabled', true);
+            $('#login-sign-usb-input').prop('disabled', false);
+
+            oLogin.ckeckNCA(0);
+        }
+    });
+
+    $('.no-received').click(function () {
+            $('.no-received-info').show();
+    });
+
+    $('.resend-message-again-button').click(function() {
+        var employee_id = oLogin?.employee_id;
+        var data = {type: "second_factor_auth_code", 'employee_id': employee_id};
+        var url = "https://apiv1.doc24.kz/json/user/resend-message";
+
+        resendMessageAjaxRequest(data, url);
+    });
+
+    $('#sign-in-eds-type').trigger('change');
+
+    $('.regTypes-Item').click(function () {
+        var type = $(this).data('reg-type');
+
+        if (type === 'google' || type === 'facebook') {
+            return;
+        }
+
+        if (type === 'eds') {
+            selectEdsEnter();
+        } else {
+            selectPassEnter();
+        }
+    });
+
+    function NcaLogin() {
+        $('#by-ncalayer-container').show();
+        $('#by-eds-container').hide();
+        $('#by-pass-container').hide();
+    }
+
+    function selectEdsEnter() {
+        $('.regTypeTitles-Item[data-reg-type="email"]').removeClass('active');
+        $('.regTypes-Item[data-reg-type="eds"]').removeClass('active');
+        $('.regTypeTitles-Item[data-reg-type="eds"]').addClass('active');
+        $('.regTypes-Item[data-reg-type="email"]').addClass('active');
+        $('#by-eds-container').show();
+        $('#by-pass-container').hide();
+        $('#by-ncalayer-container').hide();
+        localStorage.setItem('loginBy', 'eds');
+    }
+
+    var errorState = false
+
+    function renderErrorModal(id) {
+        if (errorState) {
+            $('.NCALayerErrorBackDrop').show('slow')
+            $('#' + id).show('slow')
+        } else {
+            $('.NCALayerErrorBackDrop').hide('slow')
+            $('#' + id).hide('slow')
+        }
+    }
+
+    var errorModalsId = ['NCALayerError', 'NCALayerNotConnected', 'chooseKeyModal', 'chooseNCLayerModal', 'NCApassModal']
+
+    function hideErrorModal(id) {
+        errorState = false
+        renderErrorModal(id)
+    }
+
+
+
+
+    //При возникновении ошибки, вызвать эту функция передать ей id модалки этой ошибки
+    function errorOn(errorId) {
+        errorState = true
+        $(id).show('slow')
+        $('.NCALayerErrorBackDrop').show('slow')
+    }
+
+
+    $('.NCALayerErrorBackDrop').click(function () {
+        errorState = false
+        $(errorModalsId).each(function () {
+            hideErrorModal(this)
+        })
+        $('.NCALayerErrorBackDrop').hide('slow')
+    })
+
+    function selectPassEnter() {
+        $('.regTypeTitles-Item[data-reg-type="eds"]').removeClass('active');
+        $('.regTypes-Item[data-reg-type="email"]').removeClass('active');
+        $('.regTypeTitles-Item[data-reg-type="email"]').addClass('active');
+        $('.regTypes-Item[data-reg-type="eds"]').addClass('active');
+        $('#by-pass-container').show();
+        $('#by-eds-container').hide();
+        $('#by-ncalayer-container').hide();
+        $('.reg-type').prop('disabled', false).eq(0).change();
+        localStorage.setItem('loginBy', 'pass');
+    }
+
+    function selectSignType() {
+        oNcaLayer.browseKeyStore();
+    }
+
+</script>
+
+<script src="/site/js/check-browser-support.js"></script>
+
+<div class="modal fade ConsultingRequest" id="modal-consultation_request" role="dialog" aria-hidden="true"
+     style="display: none; z-index: 99999;">
+    <div class="modal-dialog" style="width: 850px; max-width: 95%;">
+        <div class="modal-content" style="margin-bottom: 50px;">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="z-index: 10;"><i
+                        class="fa fa-times"></i></button>
+            <div>
+                <div class="modal-body" style="padding: 0; display: flex">
+                    <ul class="ConsultingRequest-StepList hidden-xs hidden-sm">
+                        <li data-step="1" class="active"><span>1 Шаг</span></li>
+                        <li data-step="2"><span>2 Шаг</span></li>
+                        <li data-step="3" style="display: none"><span>3 Шаг</span></li>
+                    </ul>
+                    <div class="ConsultingRequest-RightContent">
+                        <div class="ConsultingRequest-StepContent">
+                            <form onsubmit="return false;" class="Step Step-1 active">
+                                <div class="Step-Content">
+                                    <h3 class="Step-Title">
+
+                                        Выберите категорию Вашего запроса:
+                                    </h3>
+                                    <div class = "search_question">
+                                        <input type = "text"  id = "searchinput"  placeholder = "Поиск" />
+                                        <i class="fa fa-search iconsearch"></i>
+                                    </div>
+                                    <ul class="QuestionCategories">
+                                        <!-- JS -->
+                                    </ul>
+                                    <p class="Step-OtherQuestion" data-in-step="1"
+                                       style="margin-top: 30px; margin-bottom: 0; cursor: pointer;"
+                                    >
+                                        <b>Задать свой вопрос ></b>
+                                    </p>
+                                </div>
+                            </form>
+
+                            <!-- Step 2 -->
+                            <div class="Step Step-2">
+                                <div class="Step-Content">
+                                    <h3 class="Step-Title">
+                                        <!-- JS -->
+                                    </h3>
+                                    <div class="Step-Description">
+                                        <!-- JS -->
+                                    </div>
+                                    <div class="PopularQuestionsInCategory">
+                                        <div class="PopularQuestionsInCategory-Lead">
+                                            <i class="fa fa-question-circle"></i>
+                                            Популярные вопросы в данной категории:                                        </div>
+                                        <ul class="PopularQuestions">
+                                            <!-- JS -->
+                                        </ul>
+                                    </div>
+                                    <p class = "notfound">
+                                    </p>
+                                    <p class = "couldntfind">
+                                        Не нашли ответ на Ваш вопрос?                                        <a href="javascript:void(0);" class="Step-OtherQuestion" data-in-step="2">
+                                            Задайте его нам >
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="Step-Footer">
+                                    <button type="button" class="Step-Button Step-Button_Gray Step-GoBack">
+                                        <i class="fa fa-angle-left"></i>
+                                        Назад                                    </button>
+                                </div>
+                            </div>
+                            <!-- Step 2 END -->
+
+                            <div class="Step Step-3">
+                                <div class="formSuccessSubmited">
+                                    Благодарим за обратную связь!<br>Наш представитель свяжется с Вами при первой возможности.                                </div>
+                                <div class="Step-Content">
+                                    <h3 class="Step-Title">Форма обратной связи</h3>
+                                    <p style="margin-top: 0;font-size: 13px;">Поля, отмеченные звездочкой (*), являются обязательными.</p>
+                                    <form class="formInputs checkForm" id="sendFeedbackForm" enctype="multipart/form-data">
+                                        <input type="hidden" name="sType" value="">
+                                        <div class="form-group field" style="width: 100%;">
+                                            <div class="field-icon"><i class="fa fa-user"></i></div>
+                                            <input type="text" class="required" name="sEmployeeFio"
+                                                   placeholder="ФИО *" required>
+                                            <div class="success-icon">
+                                                <i class="fa fa-check" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="error-icon">
+                                                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="error-message"></div>
+                                        </div>
+                                        <div class="form-group field field-piece">
+                                            <div class="field-icon"><i class="fa fa-sitemap"></i></div>
+                                            <input type="text" class="required" name="sCompanyName"
+                                                   placeholder="Название компании *" required>
+                                            <div class="success-icon">
+                                                <i class="fa fa-check" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="error-icon">
+                                                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="error-message"></div>
+                                        </div>
+                                        <!--                                            <div class="form-group field field-piece">-->
+                                        <!--                                                <div class="field-icon"><i class="fa fa-building"></i></div>-->
+                                        <!--                                                <input type="text" name="city" placeholder="Город">-->
+                                        <!--                                            </div>-->
+                                        <div class="form-group field field-piece">
+                                            <div class="field-icon"><i class="fa fa-phone"></i></div>
+                                            <input type="tel" class="phone-mask required" name="sPhone"
+                                                   placeholder="Номер телефона *" required>
+                                            <div class="success-icon">
+                                                <i class="fa fa-check" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="error-icon">
+                                                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="error-message"></div>
+                                        </div>
+                                        <div class="form-group field field-piece">
+                                            <div class="field-icon"><i class="fa fa-sitemap"></i></div>
+                                            <input type="text" class="required bin-mask" name="sBin" placeholder="БИН или ИИН *"
+                                                   required>
+                                            <div class="success-icon">
+                                                <i class="fa fa-check" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="error-icon">
+                                                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="error-message"></div>
+                                        </div>
+                                        <div class="form-group field field-piece">
+                                            <div class="field-icon"><i class="fa fa-envelope"></i></div>
+                                            <input type="email" class="email-mask required" name="sEmail"
+                                                   placeholder="Email *" required>
+                                            <div class="success-icon">
+                                                <i class="fa fa-check" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="error-icon">
+                                                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="error-message"></div>
+                                        </div>
+                                        <div>
+                                            Для более оперативной работы службы технической поддержки просим Вас подробно описать причину обращения. Любая дополнительная информация (например, номер документа, БИН компании, имя сотрудника, скриншот ошибки) поможет нашим специалистам решить Ваш вопрос скорее.                                        </div>
+                                        <div class="form-group field" style="width: 100%;">
+                                            <textarea class="required"
+                                                      style="resize: none; height: 150px"
+                                                      name="sText" placeholder="Сообщение *"
+                                                      required></textarea>
+                                            <div class="success-icon">
+                                                <i class="fa fa-check" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="error-icon">
+                                                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="error-message"></div>
+                                        </div>
+                                        <div class="form-group field" style="width: 100%;">
+                                            <input type="file" id="supportFiles"
+                                                   multiple >
+                                            <div class="success-icon">
+                                                <i class="fa fa-check" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="error-icon">
+                                                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="error-message"></div>
+                                        </div>
+                                        <div class="Step-Footer">
+                                            <button type="button" class="Step-Button Step-Button_Gray Step-GoBack">
+                                                <i class="fa fa-angle-left"></i>
+                                                Назад                                            </button>
+                                            <button type="submit" disabled class="Step-Button SendButtton"
+                                                    id="sendFeedbackForm_Submit">
+                                                Отправить                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="request-call" class="hidden-xs">
+    <div class="request-call-header">
+        <h2>
+            <i class="fa fa-question-circle-o" aria-hidden="true" style="font-size: 19px;margin-right: 10px;"></i>
+            Задать вопрос        </h2>
+    </div>
+</div>
+
+<script>
+    function validateEmail(email) {
+        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(email).toLowerCase());
+    }
+
+    function validatePhone(phone) {
+        var re = /^(\d|\+|\-|\s|\(|\))+$/;
+        return re.test(phone) && phone.length === 16;
+    }
+
+    var callRequestFormValidate = {};
+
+    function changeCreateSystemValidateState(form = null) {
+        if (form) {
+            var isValid = true;
+
+            $('#' + form + ' .required').each(function () {
+                var name = $(this).attr('name');
+                if (!callRequestFormValidate[name]) {
+                    isValid = false;
+                }
+            });
+
+            $('#' + form + ' .SendButtton').prop('disabled', !isValid);
+        }
+    }
+
+    $('.phone-mask').mask('+7(799)999-99-99', {placeholder: "+7(7**)***-**-**"});
+    $('.bin-mask').mask('999999999999', {placeholder: "************"});
+
+    $('#sendFeedbackForm').on('submit', function (e) {
+        e.preventDefault();
+
+        var formData = new FormData($(this).get(0));
+
+        $.each($('#supportFiles')[0].files, function(i, file) {
+            formData.append('file-'+i, file);
+        });
+
+        var btn = $('#sendFeedbackForm_Submit');
+
+        btn.html('<i class="fa fa-spinner fa-spin" aria-hidden="true"></i>');
+        btn.attr('disabled', true);
+
+        $.ajax({
+            contentType: false, // важно - убираем форматирование данных по умолчанию
+            processData: false, // важно - убираем преобразование строк по умолчанию
+            data: formData,
+            type: 'post',
+            url: 'https://apiv1.doc24.kz/user/send-support-email',
+            success: function(data){
+                btn.attr('disabled', false);
+                btn.html('Отправить');
+                if (data.status != 0) {
+                    $('.formSuccessSubmited').show();
+                    $('#sendFeedbackForm').closest('.Step-Content').addClass('Blured');
+
+                    setTimeout(function () {
+                        $('.formSuccessSubmited').hide();
+
+                        resetModalForm('#sendFeedbackForm', btn);
+                    }, 5000);
+                }
+            }
+        });
+    });
+
+    function resetModalForm(sFormSelector, btn, btnText) {
+        $(sFormSelector).trigger('reset');
+        $(sFormSelector).closest('.modal').modal('hide');
+        var sSendText = 'Отправить';
+
+        if ($(sFormSelector).hasClass('checkForm')) {
+            $(sFormSelector + ' .required').each(function () {
+                var name = $(this).attr('name');
+                callRequestFormValidate[name] = false;
+                $(sFormSelector).find('.field').removeClass('success error load');
+                $('.formSuccessSubmited').hide();
+                $(sFormSelector).closest('.Step-Content').removeClass('Blured');
+                changeCreateSystemValidateState(sFormSelector.slice(1));
+                btn.val(btnText || sSendText);
+                return true
+            });
+        } else {
+            btn.prop('disabled', false).val(btnText || sSendText);
+        }
+    }
+
+    $('.checkForm .required').on('input change', function () {
+        var name = $(this).attr('name');
+        var id = $(this).closest('.checkForm').attr('id');
+        var value = $(this).val();
+        var type = $(this).attr('type');
+        var errMessage = '';
+
+        var sIncorrectTel = 'Не валидный номер телефона';
+        var sIncorrectEmail = 'Не валидный email';
+        var sIncorrectText = 'Это поле обязательно для заполнения';
+        var sIncorrectConfirmEmail = 'E-mail не совпадают!';
+
+        if (!$(this).hasClass('not-validate')) {
+            if (type == 'tel') {
+                callRequestFormValidate[name] = validatePhone(value);
+                errMessage = sIncorrectTel;
+            } else if (type == 'text' && $(this).hasClass('email-mask') || type == 'email') {
+                callRequestFormValidate[name] = validateEmail(value);
+                errMessage = sIncorrectEmail;
+            } else {
+                callRequestFormValidate[name] = !!value.trim();
+                errMessage = sIncorrectText;
+            }
+        }
+        if (callRequestFormValidate[name]) {
+            $('#' + id + ' [name=' + name + ']').parent()
+                .addClass('success')
+                .removeClass('error');
+        } else if (errMessage) {
+            $('#' + id + ' [name=' + name + ']').parent()
+                .addClass('error')
+                .removeClass('success')
+                .find('.error-message').text(errMessage);
+        }
+
+        if ($(this).hasClass('confirm')) {
+            var oInput, oInputVal;
+            if (~name.indexOf('_confirm')) {
+                oInput = $(this).attr('name').replace('_confirm', '');
+                oInputVal = $('#' + id + ' input[name=' + oInput + ']').val();
+
+                if (value === oInputVal) {
+                    callRequestFormValidate[name] = true;
+                    $('#' + id + ' [name=' + name + ']').parent()
+                        .addClass('success')
+                        .removeClass('error');
+                } else {
+                    errMessage = sIncorrectConfirmEmail;
+                    callRequestFormValidate[name] = false;
+                    $('#' + id + ' [name=' + name + ']').parent()
+                        .addClass('error')
+                        .removeClass('success')
+                        .find('.error-message').text(errMessage);
+                }
+            } else {
+                oInput = $(this).attr('name') + '_confirm';
+                oInputVal = $('#' + id + ' [name=' + oInput + ']').val();
+
+                if (oInputVal !== '') {
+                    if (value === oInputVal) {
+                        callRequestFormValidate[oInput] = true;
+                        $('#' + id + ' [name=' + oInput + ']').parent()
+                            .addClass('success')
+                            .removeClass('error');
+                    } else {
+                        errMessage = sIncorrectConfirmEmail;
+                        callRequestFormValidate[oInput] = false;
+                        $('#' + id + ' [name=' + oInput + ']').parent()
+                            .addClass('error')
+                            .removeClass('success')
+                            .find('.error-message').text(errMessage);
+                    }
+                }
+            }
+        }
+        changeCreateSystemValidateState(id);
+    });
+
+</script>
+
+<section class="MobileAppDesktop">
+    <div class="container">
+        <div class="MobileAppDesktop-Content">
+            <div class="MobileAppDesktop-Left">
+                <img src="/site/images/mobile-app/app-preview.png" alt="">
+            </div>
+            <div class="MobileAppDesktop-Right">
+                <h2 class="MobileAppDesktop-Title">Работайте в системе Doculite с мобильного приложения</h2>
+                <div class="MobileAppDesktop-Desc">Удобнее. Быстрее. Легче.</div>
+                <div class="MobileAppDesktop-Links">
+                    <a href="https://play.google.com/store/apps/details?id=com.doculite_mobile">
+                        <img src="/site/doculite/imgs/google-play-badge.png" alt="">
+                    </a>
+                    <a href="https://apps.apple.com/kz/app/doculite/id1521233092">
+                        <img src="/site/doculite/imgs/app-store-badge.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="contacts">
+    <div class="container">
+                    <div class="row">
+                                    <div class="col-md-4 col-md-offset-1">
+                        <h3 class="footer-title">Контакты</h3>
+                        <ul>
+                            <li><a href="/offer">Условия предоставления сервиса</a></li>
+                        </ul>
+                        <b>Адрес:</b>
+                        <br>
+                        г. Нур-Султан, проспект Мангилик ел, 52а, <br> БЦ "Noble"                        <br><br>
+                        <ul>
+                            <li><a href="mailto:helpdesk@documentolog.com">helpdesk@documentolog.com</a></li>
+                        </ul>
+                    </div>
+                                                    <div class="col-md-4 col-md-offset-2">
+                        <h3 class="footer-title">Последние новости</h3>
+                        <ul class="news-list">
+                        </ul>
+
+                        <script>
+                            var ak = localStorage.getItem('accessKey');
+                            $.ajax({
+                                url: "https://apiv1.doc24.kz/json/meta/news",
+                                type: "GET",
+                                dataType: 'json',
+                                headers: {
+                                    'Access-Key': ak
+                                },
+                                data: {},
+                                success: function (data) {
+                                    if (data.status) {
+                                        var data = data.data;
+                                        data.length = 4;
+                                        try {
+                                            for (var i in data) {
+                                                var date = data[i].created_at.split(' ')[0].split('-');
+                                                date = date[2] + '.' + date[1] + '.' + date[0];
+                                                $('.news-list').append('<li><a href="' + data[i].link + '" target="_blank"><div class="news-date">' + date + '</div>' + data[i].title + '</a></li>');
+                                            }
+                                        } catch (e) {}
+                                    }
+                                },
+                            });
+                        </script>
+                    </div>
+                            </div>
+        
+        <div class="socuial_foot text-center">
+            <div class="social_top text-center">
+                <ul>
+                    <li><a href="//www.facebook.com/documentolog" target="_blank" class="facebook"><img
+                                    src="/site/doculite/imgs/face.png" width="23" height="23" alt="" title=""></a></li>
+                    <li><a href="//www.linkedin.com/company/newinttech-ltd/" target="_blank" class="linkedin"><img
+                                    src="/site/doculite/imgs/in.png" width="23" height="23" alt="" title=""></a></li>
+                    <li><a href="//twitter.com/documentolog" target="_blank" class="twitter"><img
+                                    src="/site/doculite/imgs/tw.png" width="23" height="23" alt="" title=""></a></li>
+                    <li><a href="//www.youtube.com/user/TheDocumentolog" target="_blank" class="youtube"><img
+                                    src="/site/doculite/imgs/you.png" width="23" height="23" alt="" title=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div style="text-align: center;">© 2017–2022            , Частная компания «Documentolog Global Limited».
+            Разработка и поддержка корпоративного ПО. Все права защищены.        </div>
+    </div>
+</footer>
+
+<!-- Мобильное приложение -->
+<div class="BigMobileAppOffer">
+    <div class="BigMobileAppOffer-Close"></div>
+    <img class="BigMobileAppOffer-Preview" src="/site/images/mobile-app/app-preview.png" alt="">
+    <div class="BigMobileAppOffer-Icon">
+        <img src="/site/images/mobile-app/app-icon.png" alt="">
+    </div>
+    <div class="BigMobileAppOffer-Name">DocuLite</div>
+    <div class="BigMobileAppOffer-Desc">
+        Работайте в системе Doculite с мобильного приложения.        <br>
+        Удобнее. Быстрее. Легче.    </div>
+    <a href="#" class="BigMobileAppOffer-Download MobileAppLink">Установить приложение</a>
+</div>
+
+<script>
+    $(function () {
+        const isMobile = /Mobile|webOS|BlackBerry|IEMobile|MeeGo|mini|Fennec|Windows Phone|Android|iP(ad|od|hone)/i.test(navigator.userAgent);
+        const isApple = /iP(ad|od|hone)/i.test(navigator.userAgent);
+
+        if (isApple) {
+            $('.MobileAppLink').attr('href', 'https://apps.apple.com/kz/app/doculite/id1521233092');
+        } else {
+            $('.MobileAppLink').attr('href', 'https://play.google.com/store/apps/details?id=com.doculite_mobile');
+        }
+
+        function showBigMobileAppOffer() {
+            $('body').css('overflow', 'hidden');
+
+            $('.BigMobileAppOffer').addClass('active');
+        }
+
+        function hideBigMobileAppOffer() {
+            $('body').css('overflow', '');
+            $('.BigMobileAppOffer').removeClass('active');
+            localStorage.setItem('showBigMobileAppOffer', 'false')
+        }
+
+        function showMiniMobileAppOffer() {
+            $('.MiniMobileAppOffer').addClass('active');
+        }
+
+        function hideMiniMobileAppOffer() {
+            $('.MiniMobileAppOffer').removeClass('active');
+            sessionStorage.setItem('showMiniMobileAppOffer', 'false')
+        }
+
+        if (isMobile) {
+            let showBig = localStorage.getItem('showBigMobileAppOffer') || 'true';
+            let showMini = sessionStorage.getItem('showMiniMobileAppOffer') || 'true';
+
+            if (showBig === 'true') {
+                showBigMobileAppOffer();
+            }
+
+            if (showMini === 'true') {
+                showMiniMobileAppOffer();
+            }
+        } else {
+            if (
+                !window.location.pathname.includes('/registration')
+                && !window.location.pathname.includes('/login')
+            ) {
+                $('.MobileAppDesktop').show();
+            }
+        }
+
+        $('.BigMobileAppOffer-Close').on('click', hideBigMobileAppOffer);
+        $('.MiniMobileAppOffer-Close').on('click', hideMiniMobileAppOffer);
+    })
+</script>
+
+<!-- Telegram Канал -->
+<div class="TelegramInvite">
+    <div class="TelegramInvite-Lead">
+        <div class="TelegramInvite-Title">
+            Хотите быть в курсе событий компании Documentolog и IT-рынка в целом?        </div>
+        <div class="TelegramInvite-Close"></div>
+    </div>
+    <div class="TelegramInvite-Content">
+        <img src="/site/images/telegram.png" class="TelegramInvite-Icon" alt="Telegram">
+        <div class="TelegramInvite-ContentText">
+            <b>Присоединяйтесь к нашему Telegram-каналу</b> , где мы делимся последними новостями компании, информацией о новых решениях и релизах систем Documentolog и Doculite, а также рассказываем об интересных IT-новостях со всего мира.        </div>
+    </div>
+    <div class="TelegramInvite-Footer">
+        <a href="javascript:void(0)"
+           class="TelegramInvite-Button TelegramInvite-Button_Negative dontShowTelegramInvite">Больше не показывать</a>
+        <a href="https://t.me/documentolog" target="_blank"
+           class="TelegramInvite-Button TelegramInvite-Subscribe">Подписаться</a>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function showTelegramInvite() {
+        $('.TelegramInvite').addClass('active');
+    }
+
+    function hideTelegramInvite() {
+        $('.TelegramInvite').removeClass('active');
+    }
+
+    function dontShowTelegramInvite() {
+        localStorage.setItem('telegramInviteState', 'never');
+        hideTelegramInvite();
+    }
+
+    function initTelegramInvite() {
+        return;
+        var showState = localStorage.getItem('telegramInviteState') || 'show';
+
+        if (showState === 'show') {
+            setTimeout(function () {
+                showTelegramInvite();
+            }, 2000);
+        }
+    }
+
+    $('.TelegramInvite-Close, .TelegramInvite-Subscribe').on('click', function () {
+        hideTelegramInvite();
+    });
+
+    $('.dontShowTelegramInvite').on('click', function () {
+        dontShowTelegramInvite();
+    });
+
+    initTelegramInvite();
+</script>
+
+<script>
+    $(function () {
+        var ak = localStorage.getItem('accessKey');
+        var dn = localStorage.getItem('displayName');
+        if (ak && dn) {
+            $.ajax({
+                url: 'https://apiv1.doc24.kz/json/meta/info',
+                type: "GET",
+                dataType: 'json',
+                headers: {
+                    'Access-Key': ak
+                },
+                data: {},
+                success: function (aData) {
+                    if (aData.status) {
+                        $('.not-logged-item').hide();
+                        $('.logged-item').show();
+                        $('#displayName').text(dn);
+                    } else {
+                        // localStorage.removeItem('accessKey');
+                        // localStorage.removeItem('displayName');
+                        $('.not-logged-item').show();
+                        $('.logged-item').hide();
+                    }
+                },
+            });
+            //xhr.setRequestHeader('access-key', ak);
+            //$.get('///json/meta/info?accessKey=' + ak, function (data) {
+            //    console.log(data);
+            //    if (data.status) {
+            //        $('.not-logged-item').hide();
+            //        $('.logged-item').show();
+            //        $('#displayName').text(dn);
+            //    } else {
+            //        // localStorage.removeItem('accessKey');
+            //        // localStorage.removeItem('displayName');
+            //        $('.not-logged-item').show();
+            //        $('.logged-item').hide();
+            //    }
+            //}, 'json');
+        } else {
+            $('.not-logged-item').show();
+            $('.logged-item').hide();
+        }
+    });
+
+    function getCookie(name) {
+        var matches = document.cookie.match(new RegExp(
+            "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+        ))
+        return matches ? decodeURIComponent(matches[1]) : undefined
+    }
+
+    function setCookie(name, value, options) {
+        options = options || {};
+
+        var expires = options.expires;
+
+        if (typeof expires == "number" && expires) {
+            var d = new Date();
+            d.setTime(d.getTime() + expires * 1000);
+            expires = options.expires = d;
+        }
+        if (expires && expires.toUTCString) {
+            options.expires = expires.toUTCString();
+        }
+
+        value = encodeURIComponent(value);
+
+        var updatedCookie = name + "=" + value;
+
+        for (var propName in options) {
+            updatedCookie += "; " + propName;
+            var propValue = options[propName];
+            if (propValue !== true) {
+                updatedCookie += "=" + propValue;
+            }
+        }
+
+        document.cookie = updatedCookie;
+    }
+
+    function toSite() {
+        if (localStorage.getItem('accessKey')) {
+            window.location.href = '/documents';
+        } else {
+            window.location.href = '/login';
+        }
+    }
+
+    function downloadAgent() {
+        var os = (/(win|mac|linux|sunos|solaris|iphone)/.exec(navigator.platform.toLowerCase()) || [u])[0].replace('sunos', 'solaris');
+        if (os == 'win') {
+            window.location.href = '/site/files/doc24setup.exe';
+        } else {
+            window.location.href = '/site/files/doc24macos.dmg';
+        }
+    }
+
+    function logout() {
+        $.post('https://apiv1.doc24.kz/json/user/logout?accessKey=' + localStorage.getItem('accessKey'), function (res) {
+            localStorage.removeItem('accessKey');
+            localStorage.removeItem('displayName');
+            window.location.href = '/login';
+        });
+    }
+
+    $(function () {
+        $('.sign-in .close').click(function (e) {
+            $('.sign-in').slideUp();
+        });
+    });
+    $('a.scroll-link').bind('click', function (event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: ($($anchor.attr('href').replace('/', '')).offset().top - 50)
+        }, 500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+</script>
+<!-- Google Tag Manager -->
+<script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-T6XK2QZ');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Tag Manager (noscript) -->
+<script>
+    window.API_SITE_URL = 'https://apiv1.doc24.kz';
+</script>
+<script src="/site/js/faq.js"></script>
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T6XK2QZ"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+</body>
+</html>
